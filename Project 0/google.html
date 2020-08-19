@@ -10,15 +10,32 @@
           border-radius: 25px;
           border-color: lightgrey;
         }
+
+        .Buttons > input {
+          background-color: #dedede;
+          width: 140px;
+          height: 30px;
+          font-size: 15px;
+          border-radius: 4px
+          margin: 25px;
+        }
+
+        .image{
+          text-align: center;
+        }
         </style>
     </head>
     <body>
+      <div class="image">
+        <img src="logo.png" alt="Google Logo">
+      </div>
         <form action="https://google.com/search" style="text-align: center">
           <div>
             <input type="text" name="q" id = "searchbar">
           </div>
-          <div>
+          <div class="Buttons">
             <input type="submit" value="Google Search">
+            <input type="submit" value="I'm Feeling Lucky">
           </div>
         </form>
     </body>

@@ -11,32 +11,43 @@
           border-color: lightgrey;
         }
 
-        .Buttons > input {
+        #Search, #Lucky{
           background-color: #dedede;
           width: 140px;
           height: 30px;
           font-size: 15px;
-          border-radius: 4px
-          margin: 25px;
+          border-radius: 4px;
+          margin-top: 10px;
         }
-
         .image{
           text-align: center;
+          margin-top: 100px;
+        }
+        .Links{
+          text-align: right;
         }
         </style>
     </head>
     <body>
+      <div class="Links">
+        <form action="googleimages.html">
+          <input type="submit" value="Images">
+        </form>
+        <form action="advancedsearch.html">
+          <input type="submit" value="Advanced Search">
+        </form>
+      </div>
       <div class="image">
         <img src="logo.png" alt="Google Logo">
       </div>
-        <form action="https://google.com/search" style="text-align: center">
+      <form action="https://google.com/search" style="text-align: center">
           <div>
             <input type="text" name="q" id = "searchbar">
           </div>
           <div class="Buttons">
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
+            <input type="submit" value="Google Search" id="Search">
+            <input type="submit" value="I'm Feeling Lucky" id="Lucky">
           </div>
-        </form>
+      </form>
     </body>
 </html>

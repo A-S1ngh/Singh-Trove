@@ -19,22 +19,33 @@
           border-radius: 4px;
           margin-top: 10px;
         }
+        #Search:hover, #Lucky:hover{
+          background-color: white;
+        }
         .image{
           text-align: center;
-          margin-top: 100px;
+          margin-top: 150px;
+        }
+        #Images, #AS{
+          background-color: none;
+          width: 140px;
+          height: 30px;
+          font-size: 15px;
+          border-style: none;
         }
         .Links{
-          text-align: right;
+          background-color: none;
         }
+
         </style>
     </head>
     <body>
-      <div class="Links">
+      <div class="Links" style="height: 50px; width: max; text-align: right">
         <form action="googleimages.html">
-          <input type="submit" value="Images">
+          <button type="submit" id="Images">Images</button>
         </form>
         <form action="advancedsearch.html">
-          <input type="submit" value="Advanced Search">
+          <button type="submit" id="AS">Advanced Search</button>
         </form>
       </div>
       <div class="image">

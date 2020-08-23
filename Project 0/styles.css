@@ -1,0 +1,44 @@
+.Links{
+  height: 50px;
+  width: max;
+  text-align: right;
+}
+
+#Images, #AS{
+  background-color: none;
+  width: 140px;
+  height: 30px;
+  font-size: 15px;
+  border-style: none;
+}
+
+#Search:hover, #Lucky:hover, #Images:hover, #AS:hover{
+  background-color: white;
+}
+
+.image{
+  text-align: center;
+  margin-top: 150px;
+}
+
+#searchbar{
+  width: 700px;
+  height: 35px;
+  border-width: 1px;
+  border-radius: 25px;
+  border-color: lightgrey;
+}
+
+#Search, #Lucky{
+  background-color: #dedede;
+  width: 140px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.Searchbarc, .Buttons{
+  text-align: center;
+}

@@ -2,63 +2,38 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <style media="screen">
-        #searchbar{
-          width: 700px;
-          height: 35px;
-          border-width: 1px;
-          border-radius: 25px;
-          border-color: lightgrey;
-        }
-
-        #Search, #Lucky{
-          background-color: #dedede;
-          width: 140px;
-          height: 30px;
-          font-size: 15px;
-          border-radius: 4px;
-          margin-top: 10px;
-        }
-        #Search:hover, #Lucky:hover{
-          background-color: white;
-        }
-        .image{
-          text-align: center;
-          margin-top: 150px;
-        }
-        #Images, #AS{
-          background-color: none;
-          width: 140px;
-          height: 30px;
-          font-size: 15px;
-          border-style: none;
-        }
-        .Links{
-          background-color: none;
-        }
-
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-      <div class="Links" style="height: 50px; width: max; text-align: right">
+
+      <div class="Links">
         <form action="googleimages.html">
-          <button type="submit" id="Images">Images</button>
+          <button type="submit"id="Images">Images</button>
         </form>
         <form action="advancedsearch.html">
           <button type="submit" id="AS">Advanced Search</button>
         </form>
       </div>
+
       <div class="image">
         <img src="logo.png" alt="Google Logo">
       </div>
-      <form action="https://google.com/search" style="text-align: center">
-          <div>
+
+      <div class="Searchbarc">
+        <form action="https://google.com/search">
             <input type="text" name="q" id = "searchbar">
-          </div>
-          <div class="Buttons">
+      </div>
+
+      <div class="Buttons">
             <input type="submit" value="Google Search" id="Search">
-            <input type="submit" value="I'm Feeling Lucky" id="Lucky">
-          </div>
-      </form>
+        <form/>
+
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <input type="submit" value="I'm Feeling Lucky" id="Lucky">
+        <form/>
+
+      </div>
+
+
     </body>
 </html>

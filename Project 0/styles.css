@@ -4,7 +4,7 @@
   text-align: right;
 }
 
-#Images, #AS{
+#Images, #AS, #glsearch, #assearch{
   background-color: none;
   width: 140px;
   height: 30px;
@@ -12,7 +12,7 @@
   border-style: none;
 }
 
-#Search:hover, #Lucky:hover, #Images:hover, #AS:hover{
+#Search:hover, #Lucky:hover, #Images:hover, #AS:hover, #glsearch:hover, #assearch:hover{
   background-color: white;
 }
 
@@ -21,12 +21,14 @@
   margin-top: 150px;
 }
 
-#searchbar{
+#searchbar, #Isearchbar{
   width: 700px;
   height: 35px;
   border-width: 1px;
   border-radius: 25px;
   border-color: lightgrey;
+  text-align: center;
+  font-size: 17px;
 }
 
 #Search, #Lucky{
@@ -41,4 +43,15 @@
 
 .Searchbarc, .Buttons{
   text-align: center;
+}
+
+.ASTitle{
+  text-align: left;
+}
+
+#AdvancedSearch{
+  color: red;
+  margin-left: 50px;
+  margin-top: 20px
+  font-size: 30px;
 }

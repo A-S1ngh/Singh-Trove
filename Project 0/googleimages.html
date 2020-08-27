@@ -2,11 +2,32 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-      <form method=”get” action=”http://images.google.com/images”>
-        <input type=”text” name=”q” />
-        <input type=”submit” value=”Search Google Images”/>
-      </form>
+      <div class="Links">
+        <form action="google.html">
+          <button type="submit" id="glsearch">Google Search</button>
+        </form>
+        <form action="advancedsearch.html">
+          <button type="submit" id="assearch">Advanced Search</button>
+        </form>
+      </div>
+
+      <div class="image">
+        <img src="imageslogo.png" alt="Google Images Logo">
+      </div>
+
+      <div class="Searchbarc">
+        <form action="https://images.google.com/images">
+          <input type="text" name="q" id="Isearchbar">
+        </form>
+      </div>
+
+
+
+
+
+
     </body>
 </html>

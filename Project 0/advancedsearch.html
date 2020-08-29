@@ -4,12 +4,31 @@
     <meta charset="utf-8">
     <title>Google Advanced Search</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <div class="ASTitle">
-      <h3 id="AdvancedSearch"; font-family: 'Roboto', sans-serif;>Advanced Search</h3>
+      <label id="AdvancedSearch">Advanced Search</label>
+    </div>
+
+    <div class="Line">
+      <hr id = "ASLine">
+    </div>
+
+    <div class="Searches">
+      <label id="FPW">Find Pages with...</label>
+        <br><br>
+      <form action="https://google.com/search">
+        all these words: <input type="text" name="as_q" id="s1">
+        <br><br>
+        exact word/phrase: <input type="text" name="as_epq" id="s2" >
+        <br><br>
+        any of these words: <input type="text" name="as_oq" id="s3">
+        <br><br>
+        none of these words: <input type="text" name="as_eq" id="s4">
+        <br><br>
+        <input type="submit" value="Advanced Search" id="ASButton">
+</form>
     </div>
 
   </body>

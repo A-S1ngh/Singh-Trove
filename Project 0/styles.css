@@ -4,7 +4,7 @@
   text-align: right;
 }
 
-#Images, #AS, #glsearch, #assearch{
+#Images, #AS, #glsearch, #assearch, #BTG{
   background-color: none;
   width: 140px;
   height: 30px;
@@ -40,14 +40,17 @@
   border-radius: 4px;
   margin-top: 10px;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .Searchbarc, .Buttons{
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .ASTitle{
   margin-top: 25px;
+  float: left;
 }
 
 #AdvancedSearch{
@@ -99,5 +102,13 @@ form{
   background-color: #4d90fe;
   border: 1px, solid, #3079ed;
   color: #fff;
-  margin-left: 500px;
+  margin-left: 800px;
+}
+
+#BTG{
+  right: 150px;
+}
+
+.B{
+  float: right;
 }

@@ -12,14 +12,15 @@
         <div class="row">
             <div class="sidebar col-lg-2 col-md-3">
                 <h2>Wiki</h2>
-                <form>
-                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+                <form action="{% url 'wiki:search' %}" method="POST">
+                    {% csrf_token %}
+                    {{form.as_p}}
                 </form>
                 <div>
                     <a href="{% url 'wiki:index' %}">Home</a>
                 </div>
                 <div>
-                    <a href="#">Create New Page</a>
+                    <a href="{% url 'wiki:addpage' %}">Create New Page or Search</a>
                 </div>
                 <div>
                     <a href="{% url 'wiki:random' %}">Random Page</a>

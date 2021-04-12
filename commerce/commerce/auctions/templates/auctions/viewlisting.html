@@ -1,0 +1,20 @@
+{% extends "auctions/layout.html" %}
+
+{% block title %}
+  {{listing.name}}
+{% endblock %}
+
+{% block body %}
+  <h1>{{listing.name}}</h1>
+  <img src="{{listing.image}}" alt="No Image Available" style="height: 350px">
+  <h4>Category: {{listing.category}}</h4>
+  <h4>Current Bid: {{listing.startingbid}}</h4>
+  <p>{{listing.description}}</p>
+  <br><br>
+  {% if added %}
+    <a href="#">Remove from Watchlist</a>
+  {% else %}
+    <a href="{% url 'addtowl' listing.id %}">Add to Watchlist</a>
+  {% endif %}
+
+{% endblock %}

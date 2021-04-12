@@ -17,4 +17,4 @@ def cooldrawing():
     turtle.end_fill()
     turtle.done()
 
-cooldrawing()
+square()
